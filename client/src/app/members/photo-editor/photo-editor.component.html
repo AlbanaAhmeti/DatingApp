@@ -87,7 +87,7 @@
       </div>
       <button
         type="button"
-        class="btn btn-success btn-s"
+        class="btn btn-success btn-s pick"
         (click)="uploader?.uploadAll()"
         [disabled]="!uploader?.getNotUploadedItems()?.length"
       >
@@ -95,7 +95,7 @@
       </button>
       <button
         type="button"
-        class="btn btn-warning btn-s"
+        class="btn btn-warning btn-s pick"
         (click)="uploader?.cancelAll()"
         [disabled]="!uploader?.isUploading"
       >
@@ -103,7 +103,7 @@
       </button>
       <button
         type="button"
-        class="btn btn-danger btn-s"
+        class="btn btn-danger btn-s pick"
         (click)="uploader?.clearQueue()"
         [disabled]="!uploader?.queue?.length"
       >

@@ -11,3 +11,10 @@ img.img-thumbnail {
 input[type="file"] {
   color: transparent;
 }
+
+.pick {
+  margin: 5px;
+}
+button {
+  margin: 1px;
+}
