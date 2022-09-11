@@ -22,16 +22,15 @@ export class ListsComponent implements OnInit {
   }
 
   loadLikes() {
-    this.memberService
-      .getLikes(this.predicate, this.pageNumber, this.pageSize)
-      .subscribe((respose) => {
-        this.members = respose.result;
-        this.pagination = respose.pagination;
-      });
+    this.memberService.getLikes(this.predicate, this.pageNumber, this.pageSize).subscribe(response => {
+      this.members = response.result;
+      this.pagination = response.pagination;
+    })
   }
 
   pageChanged(event: any) {
-    this.pageNumber = event.change;
+    this.pageNumber = event.page;
     this.loadLikes();
   }
+
 }
